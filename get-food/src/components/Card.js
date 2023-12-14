@@ -13,7 +13,7 @@ const Card = () => {
           <h5 className="card-title">Card title</h5>
           <p className="card-text">This is about Product.</p>
           <div className="container w-100">
-            <select className="m-2 h-100  bg-primary text-white rounded">
+            <select className="m-1 h-100  bg-primary text-white rounded">
               {Array.from(Array(6), (e, i) => {
                 return (
                   <option className="text-white" key={i + 1} value={i + 1}>
@@ -22,7 +22,7 @@ const Card = () => {
                 );
               })}
             </select>
-            <select className="m-2 h-100  bg-primary text-white rounded">
+            <select className="m-1 h-100  bg-primary text-white rounded">
               <option className="text-white" key={1} value="Full">
                 Half
               </option>
@@ -30,7 +30,7 @@ const Card = () => {
                 Full
               </option>
             </select>
-            <div className="d-inline h-100 fs-5">Main Price</div>
+            <div className="m-0 d-inline h-100 fs-5">Main Price</div>
           </div>
         </div>
       </div>

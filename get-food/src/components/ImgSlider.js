@@ -1,6 +1,6 @@
 import React from "react";
 
-const Carousel = () => {
+const ImgSlider = () => {
   return (
     <div>
       <div
@@ -11,21 +11,35 @@ const Carousel = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="https://openthemagazine.com/wp-content/uploads/2019/04/Hanuman1.jpg"
+              src="https://source.unsplash.com/random/900×700?burger"
               className="d-block w-100"
               alt="..."
             />
           </div>
-          <div className="carousel-item active">
+          <div className="carousel-item">
             <img
-              src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1702512000&semt=sph"
+              src="https://source.unsplash.com/random/900×700?momos"
               className="d-block w-100"
               alt="..."
             />
           </div>
-          <div className="carousel-item active">
+          <div className="carousel-item">
             <img
-              src="https://img.freepik.com/premium-photo/lake-pier-with-mountains-background_1033303-296.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699660800&semt=ais"
+              src="https://source.unsplash.com/random/900×700?samosa"
+              className="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://source.unsplash.com/random/900×700?pasties"
+              className="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://source.unsplash.com/random/900×700?gnocchi"
               className="d-block w-100"
               alt="..."
             />
@@ -64,4 +78,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default ImgSlider;

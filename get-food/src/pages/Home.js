@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "../components/Card";
-import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import ImgSlider from "../components/ImgSlider";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
         <Navbar />
       </div>
       <div>
-        <Carousel />
+        <ImgSlider />
       </div>
       <div>
         <Card />
