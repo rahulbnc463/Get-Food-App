@@ -4,3 +4,29 @@
   box-sizing: border-box;
   color: #5f6368;
 }
+#carouselExampleFade {
+  filter: brightness(0.7);
+  max-height: 450px;
+  object-fit: contain !important;
+}
+#carousel {
+  max-height: 450px;
+}
+.carousel-caption {
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 3rem;
+  z-index: 10;
+}
+.carousel-caption input {
+  width: 100%;
+  padding: 0.8rem;
+}
+.carousel-caption button {
+  color: white;
+}
+
+/* Footer Part ........................ */
+div .row {
+  margin-right: 0;
+}
