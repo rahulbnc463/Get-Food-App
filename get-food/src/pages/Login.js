@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
@@ -8,10 +8,11 @@ const Login = () => {
     email: "",
     password: "",
   });
+  let navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const responce = await fetch("http://localhost:3400/api/user/register", {
+    const responce = await fetch("http://localhost:3400/api/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,7 +26,9 @@ const Login = () => {
     console.log(json);
 
     if (!json.success) {
-      alert("Failed to register");
+      alert("Failed to Login");
+    } else {
+      navigate("/");
     }
   };
 
