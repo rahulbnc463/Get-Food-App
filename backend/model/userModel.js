@@ -1,7 +1,7 @@
 const mongoose = require("mongoose"); // Erase if already required
-const { schema } = mongoose;
+const { Schema } = mongoose;
 
-const userSchema = new schema({
+const userSchema = new Schema({
   name: {
     type: String,
     required: true,
