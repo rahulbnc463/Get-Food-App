@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Signup = () => {
   const [userDetails, setUserDetails] = useState({
@@ -98,6 +99,9 @@ const Signup = () => {
             Already a user?
           </Link>
         </form>
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );
