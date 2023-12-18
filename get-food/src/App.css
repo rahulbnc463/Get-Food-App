@@ -7,7 +7,8 @@
 #carouselExampleFade {
   filter: brightness(0.7);
   max-height: 450px;
-  object-fit: contain !important;
+  /* object-fit: contain !important; */
+  background-size: cover;
 }
 #carousel {
   max-height: 450px;
